@@ -1,36 +1,36 @@
 <template>
-	<div class="container mx-auto">
-		<!-- Banner start -->
-		<Banner />
-		<!-- Banner snd -->
+  <div class="container mx-auto">
+    <!-- Banner start -->
+    <Banner />
+    <!-- Banner snd -->
 
-		<!-- Projects start -->
-		<ProjectsGrid />
-		<!-- Projects end -->
-	</div>
+    <!-- Projects start -->
+    <!-- <ProjectsGrid /> -->
+    <!-- Projects end -->
+  </div>
 </template>
 
 <script>
-import Banner from '@/components/home/Banner';
-import ProjectsGrid from '@/components/project/ProjectsGrid';
-import feather from 'feather-icons';
+import Banner from "@/components/home/Banner";
+// import ProjectsGrid from "@/components/project/ProjectsGrid";
+import feather from "feather-icons";
 
 export default {
-	name: 'Home',
-	components: {
-		Banner,
-		ProjectsGrid,
-	},
-	data: () => {
-		return {};
-	},
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-	methods: {},
+  name: "Home",
+  components: {
+    Banner
+    // ProjectsGrid
+  },
+  data: () => {
+    return {};
+  },
+  mounted() {
+    feather.replace();
+  },
+  updated() {
+    feather.replace();
+  },
+  methods: {}
 };
 </script>
 
