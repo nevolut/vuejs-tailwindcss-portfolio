@@ -1,0 +1,198 @@
+:root {
+  --color-primary: #dc133c;
+  --color-secondary: #4e00e9;
+}
+body {
+  max-width: 1024px;
+  min-width: 512px;
+  margin: auto;
+  border: dotted 2px var(--color-primary);
+  padding: 20px;
+  font-size: 1rem;
+  display: flex;
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+  .primary {
+    background-color: var(--color-primary);
+  }
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .secondary {
+    background-color: var(--color-secondary);
+  }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+
+  .title {
+    position: relative;
+    padding-left: 25px;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 5px;
+      background-color: var(--color-primary);
+    }
+    &::after {
+      right: -25px;
+      left: unset;
+    }
+  }
+  .subtitle {
+    position: relative;
+    padding-left: 25px;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .profile,
+  .contact,
+  .bio,
+  .skills,
+  .studies,
+  .training,
+  .languages,
+  .experience,
+  .it-skills,
+  .block-container {
+    margin-top: 25px;
+  }
+
+  .left-block {
+    width: 260px;
+    flex-shrink: 0;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .profile {
+      > .avatar {
+        background-image: url("Abarchibody.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin: 0 auto;
+        flex-shrink: 0;
+        border: 2px solid var(--color-primary);
+        box-shadow: 2px 2px 2px 2px rgba($color: #000000, $alpha: 0.2);
+      }
+      > h1 {
+        position: relative;
+        text-align: center;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 250px;
+          height: 5px;
+          background-color: var(--color-primary);
+        }
+      }
+      > h2 {
+        margin: 0;
+        text-align: center;
+        color: var(--color-secondary);
+      }
+    }
+
+    .contact {
+      > div {
+        margin-bottom: 5px;
+      }
+    }
+    .signature {
+      img {
+        width: 100%;
+        opacity: 0.5;
+        filter: grayscale(100%);
+      }
+    }
+  }
+  .right-block {
+    flex: 1;
+    border-left: 5px solid #ccc;
+    padding-left: 20px;
+
+    .skills {
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        > span {
+          flex-shrink: 0;
+          position: relative;
+          padding-left: 10px;
+          &::before {
+            content: "*";
+            position: absolute;
+            top: 70%;
+            left: 0;
+            transform: translateY(-50%);
+            color: var(--color-secondary);
+          }
+          &::after {
+            content: "";
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .studies,
+    .training,
+    .experience {
+      > .content > div > span {
+        &:first-of-type {
+          font-size: 1.25rem;
+        }
+        &:nth-of-type(2) {
+          color: var(--color-secondary);
+        }
+        &:last-of-type {
+          display: block;
+          padding-left: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a {
+            color: rgb(1, 1, 42);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .block-container {
+      i {
+        color: var(--color-secondary);
+      }
+      a {
+        color: var(--color-secondary);
+        font-weight: 100;
+        font-style: italic;
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+:root {
+  --color-primary: #dc133c;
+  --color-secondary: #4e00e9;
+}
+
+body {
+  max-width: 1024px;
+  min-width: 512px;
+  margin: auto;
+  border: dotted 2px var(--color-primary);
+  padding: 20px;
+  font-size: 1rem;
+  display: flex;
+}
+body a {
+  text-decoration: none;
+  color: unset;
+}
+body .primary {
+  background-color: var(--color-primary);
+}
+body .text-primary {
+  color: var(--color-primary);
+}
+body .secondary {
+  background-color: var(--color-secondary);
+}
+body .text-secondary {
+  color: var(--color-secondary);
+}
+body .title {
+  position: relative;
+  padding-left: 25px;
+  display: inline-block;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+body .title::before, body .title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 5px;
+  background-color: var(--color-primary);
+}
+body .title::after {
+  right: -25px;
+  left: unset;
+}
+body .subtitle {
+  position: relative;
+  padding-left: 25px;
+  display: inline-block;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+body .profile,
+body .contact,
+body .bio,
+body .skills,
+body .studies,
+body .training,
+body .languages,
+body .experience,
+body .it-skills,
+body .block-container {
+  margin-top: 25px;
+}
+body .left-block {
+  width: 260px;
+  flex-shrink: 0;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .left-block .profile > .avatar {
+  background-image: url("Abarchibody.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 0 auto;
+  flex-shrink: 0;
+  border: 2px solid var(--color-primary);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+body .left-block .profile > h1 {
+  position: relative;
+  text-align: center;
+}
+body .left-block .profile > h1::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 5px;
+  background-color: var(--color-primary);
+}
+body .left-block .profile > h2 {
+  margin: 0;
+  text-align: center;
+  color: var(--color-secondary);
+}
+body .left-block .contact > div {
+  margin-bottom: 5px;
+}
+body .left-block .signature img {
+  width: 100%;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+body .right-block {
+  flex: 1;
+  border-left: 5px solid #ccc;
+  padding-left: 20px;
+}
+body .right-block .skills .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .right-block .skills .content > span {
+  flex-shrink: 0;
+  position: relative;
+  padding-left: 10px;
+}
+body .right-block .skills .content > span::before {
+  content: "*";
+  position: absolute;
+  top: 70%;
+  left: 0;
+  transform: translateY(-50%);
+  color: var(--color-secondary);
+}
+body .right-block .skills .content > span::after {
+  content: "";
+  margin-right: 10px;
+}
+body .right-block .studies > .content > div > span:first-of-type,
+body .right-block .training > .content > div > span:first-of-type,
+body .right-block .experience > .content > div > span:first-of-type {
+  font-size: 1.25rem;
+}
+body .right-block .studies > .content > div > span:nth-of-type(2),
+body .right-block .training > .content > div > span:nth-of-type(2),
+body .right-block .experience > .content > div > span:nth-of-type(2) {
+  color: var(--color-secondary);
+}
+body .right-block .studies > .content > div > span:last-of-type,
+body .right-block .training > .content > div > span:last-of-type,
+body .right-block .experience > .content > div > span:last-of-type {
+  display: block;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .right-block .studies > .content > div > span:last-of-type a,
+body .right-block .training > .content > div > span:last-of-type a,
+body .right-block .experience > .content > div > span:last-of-type a {
+  color: #01012a;
+  text-decoration: underline;
+}
+body .right-block .block-container i {
+  color: var(--color-secondary);
+}
+body .right-block .block-container a {
+  color: var(--color-secondary);
+  font-weight: 100;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */

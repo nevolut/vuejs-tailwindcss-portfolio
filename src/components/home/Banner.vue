@@ -16,14 +16,10 @@
       </p>
       <div class="flex justify-center sm:block">
         <a
-          href="#"
+          href="/cv"
           class="flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-xl bg-indigo-50 hover:bg-indigo-500 text-gray-500 hover:text-white"
         >
-          <i
-            data-feather="arrow-down-circle"
-            class="ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6"
-          ></i>
-          <span class="text-sm sm:text-lg">Download CV</span></a
+          <span class="text-sm sm:text-lg">View CV</span></a
         >
       </div>
     </div>
